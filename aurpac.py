@@ -5,12 +5,12 @@ import os
 import sys
 #import modules
 
-#change to home directory to ensure packages arent cloned in the /usr/bin folder
+#change to home directory to ensure packages arent cloned in the binary's folder
 user = os.getlogin()
 os.chdir(f"/home/{user}")
 
 
-#get the pkg and send it to clone.py
+#get the pkg from the args
 try:
     targetpkg = str(sys.argv[1]) #store command line arg
     print(f"Package to install: {targetpkg}")
