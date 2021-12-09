@@ -12,3 +12,8 @@ to run, run either the py script or the binary with an argument for an aur packa
 
 
 python3 aurpac.py revolt-desktop
+
+
+# To Do
+
+Add a package removal argument
