@@ -1,5 +1,5 @@
 ## AURPAC: Simple AUR helper in Python
-## vesrion 1.0
+## vesrion 1.1
 
 import os
 import sys
@@ -23,7 +23,7 @@ except:
 try:
     os.system(f"git clone https://aur.archlinux.org/{targetpkg}.git")
 except:
-    print("Something went wrong. You may not have git installed. The AUR may be down or the package may not exist. Try again.")
+    print("Something went wrong. You may not have git installed. The AUR may be down or the package may not exist. Your internet connection may be down. Try again.")
     sys.exit()
 
 # move to the pkg directory
@@ -40,4 +40,4 @@ try:
     os.system("makepkg -si")
 except:
     print("Something went wrong. try again.")
-    sys.exit
+    sys.exit()
