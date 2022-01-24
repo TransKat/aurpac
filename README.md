@@ -16,4 +16,4 @@ python3 aurpac.py revolt-desktop
 
 # To Do
 
-Add a package removal argument
+Nothing, yay!
